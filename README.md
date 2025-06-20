@@ -54,6 +54,7 @@ cypress/
 
 - npm init -y
 - npm install cypress --save-dev
+- npm install @faker-js/faker --save-dev
 - npx cypress open
 - escolha um browser de preferencia (Chrome)
 - escolha uma Spec para executar primeiro em seguida escolha a outra
