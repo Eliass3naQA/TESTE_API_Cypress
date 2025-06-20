@@ -1,8 +1,14 @@
+
+// Esse import abaixo esta importando as informações do arquivo tickets na pasta APIObjects
 import tickets from "../../support/APIObjects/tickets";
+
+// nesse arquivo esta todos os cenario que serão executador
+// instale o extensios Add only para selecionar um cenario especifico e não todos se preferir
+// Escolha ID existente
 
 describe('API de tickets', () => {
 
-it('GET usuario por id', () => {
+it('GET ticket por id', () => {
   const userId = 3;
   tickets.getById(userId).then((res) => {
     expect(res.status).to.eq(200);
@@ -34,7 +40,7 @@ it('GET usuario por id', () => {
   });
 
   it('Excluir ticket', () => {
-    const userId = 11;
+    const userId = 5; //escolha um ID valido
     tickets.deleteById(userId).then((res) => {
       expect(res.status).to.eq(200)
       expect(res.body).to.have.property('message', 'Ticket deleted successfully.');

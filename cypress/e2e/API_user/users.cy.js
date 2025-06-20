@@ -1,5 +1,12 @@
+
+// Esse import abaixo esta importando as informações do arquivo user na pasta APIObjects
 import user from "../../support/APIObjects/user";
+// Esse import abaixo lê as informações do arquivo userGenerator na pasta utils para gerar dados dinamicos quando chamar o POST
 import { generateUser } from '../../support/utils/userGenerator';
+
+// nesse arquivo esta todos os cenario que serão executador
+// instale o extensios Add only para selecionar um cenario especifico e não todos se preferir
+// Escolha ID existente
 
 describe('API de Usuários', () => {
 
